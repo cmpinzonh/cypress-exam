@@ -9,6 +9,7 @@ Given('I am on the Twitter login page', async () => {
 });
 
 When('I enter valid credentials', async () => {
+  await driver.quit();
   const usernameField = await driver.findElement(By.name('session[username_or_email]'));
   const passwordField = await driver.findElement(By.name('session[password]'));
 

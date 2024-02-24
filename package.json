@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js"
+    "test": "cucumber-js",
+    "test:local": "cucumber-js --tags @local"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,8 @@
     "@cucumber/cucumber": "^10.3.1"
   },
   "dependencies": {
-    "selenium-webdriver": "^4.18.1"
+    "selenium-webdriver": "^4.18.1",
+    "superagent": "^8.1.2",
+    "superagent-promise": "^1.1.0"
   }
 }
