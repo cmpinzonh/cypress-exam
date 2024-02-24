@@ -1,3 +1,4 @@
+@local
 Feature: Twitter Login
   Scenario: Successful login
     Given I am on the Twitter login page

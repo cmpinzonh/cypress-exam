@@ -25,8 +25,8 @@ When('I call a github API', async () => {
 });
 
 Then('I should receive a json response', async () => {
+    
   const statusCode = await this.response.status;
-  console.log(this.response)
   assert.strictEqual(statusCode, 200);
   assert.equal(this.response.body.origin, '190.24.102.189')
 });
